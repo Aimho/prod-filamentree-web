@@ -1,35 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>Admin - login</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <title>FILAMENTREE</title>
 
+    <!-- bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
     <script src="../assets/bootstrap/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="login-container card">
-        <div class="card-body">
-            <h5 class="card-title">사업자 로고나 이름</h5>
-            <p class="card-text">관리자모드 로그인</p>
-            
-            <form>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="아이디를 입력해 주세요" required>
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="비밀번호를 입력해 주세요" required>
-                </div>
-                <button type="submit" class="btn btn-primary">로그인</button>
-            </form>
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+
+  <body>
+    <nav class="gnb">
+      <div class="nav container">
+        <img
+          class="logo"
+          src="../assets/images/logo@2x.png"
+          alt="FILAMENTREE"
+        />
+
+        <!-- [ASU] menu 위치 변경 시 .active 변경해주면 됩니다. -->
+        <!-- desktop menu -->
+        <div class="grid">
+          <a class="nav-link active" href="#partner-case">성공사례</a>
+          <a class="nav-link" href="#solution">솔루션</a>
+          <a class="nav-link" href="#influencer">인플루언서</a>
+          <a class="btn" href="#">소개서 다운</a>
+          <a class="btn" href="#" data-toggle="modal" data-target="#contact"
+            >마케팅 문의</a
+          >
         </div>
+
+        <!-- mobile menu btn -->
+        <a
+          class="btn btn-primary toggle"
+          data-toggle="collapse"
+          href="#mobileMenu"
+          role="button"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <!-- mobile menu -->
+      <div class="collapse" id="mobileMenu">
+        <a class="nav-link active" href="#partner-case">성공사례</a>
+        <a class="nav-link" href="#solution">솔루션</a>
+        <a class="nav-link" href="#influencer">인플루언서</a>
+      </div>
+    </nav>
+
+    <section class="main mask">
+      <div class="container">
+        <h4>
+          <span>#</span>베트남 <span>#</span>필리핀 <span>#</span>태국
+          <span>#</span>인도네시아 <span>#</span>말레이시아 <span>#</span>싱가폴
+        </h4>
+        <h1>
+          <b class="visible-web">동남아시아 인플루언서 마케팅</b>
+          <b class="visible-app">동남아시아 인플루언서</b><br />
+          <span class="visible-app">마케팅</span>
+          대행사를 찾으세요?
+        </h1>
+        <a href="#" class="btn">성공 사례 & 전략 받아보기</a>
+      </div>
+    </section>
+
+    <section class="partner-case" id="partner-case">
+      <h3>파트너 성공사례</h3>
+
+      <div id="partner-case-list" class="carousel slide" data-ride="carousel">
+        <nav>
+          <ol class="carousel-indicators grid container">
+            <a
+              class="nav-link active"
+              data-target="#partner-case-list"
+              data-slide-to="0"
+              class="active"
+              >동국제약</a
+            >
+            <a
+              class="nav-link"
+              data-target="#partner-case-list"
+              data-slide-to="1"
+              class="active"
+              >수퍼페이스</a
+            >
+            <a
+              class="nav-link"
+              data-target="#partner-case-list"
+              data-slide-to="2"
+              class="active"
+              >에이스탑</a
+            >
+            <a
+              class="nav-link"
+              data-target="#partner-case-list"
+              data-slide-to="3"
+              class="active"
+              >동아에스티</a
+            >
+            <a
+              class="nav-link"
+              data-target="#partner-case-list"
+              data-slide-to="4"
+              class="active"
+              >동아제약</a
+            >
+            <a
+              class="nav-link"
+              data-target="#partner-case-list"
+              data-slide-to="5"
+              class="active"
+              >라인</a
+            >
+          </ol>
+        </nav>
+
+        <div class="carousel-inner">
+          <!-- 동국제약 -->
+          <div class="carousel-item active" data-interval="10000">
+            <div class="container grid">
+              <img
+                class="mock"
+                src="../assets/images/case-ipad-1.png"
+                alt="사례 이미지"
+              />
+              <div class="detail">
+                <!-- desktop -->
+                <img
+                  class="logo visible-web"
+                  src="../assets/images/case-logo-1.png"
+                  alt="로고 이미지"
+                  style="top: -90px; left: 50px; width: 305px;"
+                />
+                <!-- mobile -->
+                <img
+                  class="logo visible-app"
+                  src="../assets/images/case-logo-1.png"
+                  alt="로고 이미지"
+                  style="bottom: 50px; left: 0px; width: 35%;"
+                />
+                <h2>1억원 매출 기록</h2>
+                <hr />
+                <h3>
+                  인플루언서 마케팅 진행 이후 <br />
+                  <span
+                    >제품 매출 1억원 이상을 기록! <br />
+                    리셀러 요청과 지속적인 판매</span
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- 수퍼에이스 -->
+          <div class="carousel-item" data-interval="20000">
+            <div class="container grid">
+              <img
+                class="mock"
+                src="../assets/images/case-ipad-2.png"
+                alt="사례 이미지"
+              />
+              <div class="detail">
+                <!-- desktop -->
+                <img
+                  class="logo visible-web"
+                  src="../assets/images/case-logo-2.png"
+                  alt="로고 이미지"
+                  style="top: -120px; left: 70px; width: 200px;"
+                />
+                <!-- mobile -->
+                <img
+                  class="logo visible-app"
+                  src="../assets/images/case-logo-2.png"
+                  alt="로고 이미지"
+                  style="bottom: 50px; left: 0px; width: 35%;"
+                />
+                <h2>올해의 화장품 PICK</h2>
+                <hr />
+                <h3>
+                  인플루언서 리뷰 캠페인 진행 후 <br />
+                  폭발적인 입소문과 매출을 기록,<br />
+                  <span>2018년 올해의 화장품에 선정!</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- 에이스탑 -->
+          <div class="carousel-item" data-interval="30000">
+            <div class="container grid">
+              <img
+                class="mock"
+                src="../assets/images/case-ipad-3.png"
+                alt="사례 이미지"
+              />
+              <div class="detail">
+                <!-- desktop -->
+                <img
+                  class="logo visible-web"
+                  src="../assets/images/case-logo-3.png"
+                  alt="로고 이미지"
+                  style="top: -120px; left: 70px; width: 200px;"
+                />
+                <!-- mobile -->
+                <img
+                  class="logo visible-app"
+                  src="../assets/images/case-logo-3.png"
+                  alt="로고 이미지"
+                  style="bottom: 50px; left: 0px; width: 35%;"
+                />
+                <h2>출시후 빠른 매출 전환</h2>
+                <hr />
+                <h3>
+                  여드름 잡는 토너로 현지 출시, <br />
+                  다수 인플루언서 모집을 통해 <br />
+                  <span>빠른 매출 전환을 기록!</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- 동아에스티 -->
+          <div class="carousel-item" data-interval="40000">
+            <div class="container grid">
+              <img
+                class="mock"
+                src="../assets/images/case-ipad-4.png"
+                alt="사례 이미지"
+              />
+              <div class="detail">
+                <!-- desktop -->
+                <img
+                  class="logo visible-web"
+                  src="../assets/images/case-logo-4.png"
+                  alt="로고 이미지"
+                  style="top: -170px; left: 80px; width: 200px;"
+                />
+                <!-- mobile -->
+                <img
+                  class="logo visible-app"
+                  src="../assets/images/case-logo-4.png"
+                  alt="로고 이미지"
+                  style="bottom: 20px; left: 0px; width: 35%;"
+                />
+                <h2>‘오라떼’ 음료 5백만 바이럴</h2>
+                <hr />
+                <h3>
+                  말레이시아 오라떼 출시와 함께 <br />
+                  인플루언서와 SNS 콘텐츠를 제작, <br />
+                  <span>5백만 VIEW , 2만 LIKE 기록!</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- 동아제약 -->
+          <div class="carousel-item" data-interval="50000">
+            <div class="container grid">
+              <img
+                class="mock"
+                src="../assets/images/case-ipad-5.png"
+                alt="사례 이미지"
+              />
+              <div class="detail">
+                <!-- desktop -->
+                <img
+                  class="logo visible-web"
+                  src="../assets/images/case-logo-5.png"
+                  alt="로고 이미지"
+                  style="top: -130px; left: 70px; width: 280px;"
+                />
+                <!-- mobile -->
+                <img
+                  class="logo visible-app"
+                  src="../assets/images/case-logo-5.png"
+                  alt="로고 이미지"
+                  style="bottom: 50px; left: 0px; width: 35%;"
+                />
+                <h2>‘에너지파티’ 7천만 바이럴</h2>
+                <hr />
+                <h3>
+                  셀럽 초청 브랜드 행사 진행, <br />
+                  인스타, 페이스북, 유튜브 총 <br />
+                  <span>7천만 VIEW , 43만 LIKE 기록!</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- 라인 -->
+          <div class="carousel-item" data-interval="60000">
+            <div class="container grid">
+              <img
+                class="mock"
+                src="../assets/images/case-ipad-6.png"
+                alt="사례 이미지"
+              />
+              <div class="detail">
+                <!-- desktop -->
+                <img
+                  class="logo visible-web"
+                  src="../assets/images/case-logo-6.png"
+                  alt="로고 이미지"
+                  style="top: -120px; left: 110px; width: 180px;"
+                />
+                <!-- mobile -->
+                <img
+                  class="logo visible-app"
+                  src="../assets/images/case-logo-6.png"
+                  alt="로고 이미지"
+                  style="bottom: 50px; left: 0px; width: 35%;"
+                />
+                <h2>‘라인스토어’ 5천만 바이럴</h2>
+                <hr />
+                <h3>
+                  셀럽 초청 브랜드 행사 진행, <br />
+                  인스타, 페이스북, 유튜브 총 <br />
+                  <span>5천만 VIEW , 24만 LIKE 기록!</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-control container">
+          <a
+            class="carousel-control-prev"
+            href="#partner-case-list"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#partner-case-list"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="influencer visible-web">
+      <div class="grid container">
+        <h5>
+          필라멘트리 인플루언서 마케팅 소개서 다운받기
+        </h5>
+        <a href="#" class="btn">
+          서비스 소개서 다운
+        </a>
+      </div>
+    </section>
+
+    <section class="influencer-detail" id="solution">
+      <div class="what mask">
+        <h2>
+          <b>인플루언서 마케팅</b>, <br class="visible-mobile" />
+          무엇이 고민이세요?
+        </h2>
+        <div class="grid container">
+          <!-- desktop -->
+          <img
+            class="visible-web"
+            src="../assets/images/influencer-item-1.png"
+            alt="인플루언서 설명"
+          />
+          <img
+            class="visible-web"
+            src="../assets/images/influencer-item-2.png"
+            alt="인플루언서 설명"
+          />
+          <img
+            class="visible-web"
+            src="../assets/images/influencer-item-3.png"
+            alt="인플루언서 설명"
+          />
+          <!-- mobile -->
+          <img
+            class="visible-app"
+            src="../assets/images/influencer-item-mobile-1.png"
+            alt="인플루언서 설명"
+          />
+          <img
+            class="visible-app"
+            src="../assets/images/influencer-item-mobile-2.png"
+            alt="인플루언서 설명"
+          />
+          <img
+            class="visible-app"
+            src="../assets/images/influencer-item-mobile-3.png"
+            alt="인플루언서 설명"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="influencer-point" id="influencer">
+      <div class="container">
+        <h2>
+          필라멘트리 인플루언서 마케팅의<br />
+          <b>3가지 차별화 포인트</b>
+        </h2>
+        <!-- desktop -->
+        <img
+          class="visible-web"
+          src="../assets/images/influencer-point-1.png"
+          alt="인플루언서 차별화 포인트"
+        />
+        <img
+          class="visible-web"
+          src="../assets/images/influencer-point-2.png"
+          alt="인플루언서 차별화 포인트"
+        />
+        <img
+          class="visible-web"
+          src="../assets/images/influencer-point-3.png"
+          alt="인플루언서 차별화 포인트"
+        />
+        <!-- mobile -->
+        <img
+          class="visible-app"
+          src="../assets/images/influencer-point-mobile-1.png"
+          alt="인플루언서 설명"
+        />
+        <img
+          class="visible-app"
+          src="../assets/images/influencer-point-mobile-2.png"
+          alt="인플루언서 설명"
+        />
+        <img
+          class="visible-app"
+          src="../assets/images/influencer-point-mobile-3.png"
+          alt="인플루언서 설명"
+        />
+      </div>
+    </section>
+
+    <section class="influencer-network">
+      <h2>
+        INFLUENCER NETWORK
+      </h2>
+      <h4>
+        #동남아시아 6개국 #2,000명 인플루언서 #1.5억명 팔로워
+      </h4>
+      <div class="grid container">
+        <img
+          src="../assets/images/influencer-network-1.png"
+          alt="인플루언서 설명"
+        />
+        <img
+          src="../assets/images/influencer-network-2.png"
+          alt="인플루언서 설명"
+        />
+        <img
+          src="../assets/images/influencer-network-3.png"
+          alt="인플루언서 설명"
+        />
+      </div>
+    </section>
+
+    <section class="influencer-map mask">
+      <div class="container">
+        <img
+          src="../assets/images/influencer-map.png"
+          alt="인플루언서 네트워크"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <h4>
+        동남아시아 인플루언서 마케팅에 대한 고민. <br />
+        지금, 필라멘트리와 함께 해결해보세요.
+      </h4>
+      <div class="grid container">
+        <div>
+          <h6 class="visible-web">
+            FILAMENTREE
+            <a href="#" class="btn"> 필라멘트리 홈페이지 </a><br />
+            No.1 Southeast Asia Influencer Marketing Agency
+          </h6>
+          <h6 class="visible-app">
+            NO.1 SOUTHEAST ASIA INFLUENCER <br />
+            MARKETING AGENCY
+          </h6>
+
+          <!-- mobile footer btn -->
+          <div class="mobile-btn visible-app">
+            <a href="#" class="btn" data-toggle="modal" data-target="#contact">
+              문의하기
+            </a>
+            <a href="#" class="btn"> 소개서받기 </a>
+            <a href="#" class="btn"> 홈페이지 </a>
+          </div>
+        </div>
+
+        <div class="grid site-map">
+          <p>
+            <b>회사명</b>주식회사 필라멘트리 <br />
+            <b>사업자등록번호</b>105-88-00166 <br />
+            <b>대표이사</b>문두열 <br />
+            <b>개인정보보호책임자</b>문두열
+          </p>
+          <p>
+            <b>주소</b>서울특별시 봉은사로 49길 17(논현동 270-33) <br />
+            <b>Tel</b>070-4125-5124 <br />
+            <b>Fax</b>02-518-2102
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 문의사항 -->
+    <div
+      class="modal fade"
+      id="contact"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactLabel">
+              동남아시아 인플루언서 마케팅 NO.1 필라멘트리<br />
+              <b>고민의 a부터 z까지, 무엇이든 남겨주세요!</b>
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="InputName">이름</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="InputName"
+                  placeholder="답변을 입력하세요"
+                />
+              </div>
+              <div class="form-group">
+                <label for="InputEmail">이메일</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="InputEmail"
+                  placeholder="답변을 입력하세요"
+                />
+              </div>
+              <div class="form-group">
+                <label for="InputPhone">연락처</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="InputPhone"
+                  placeholder="답변을 입력하세요"
+                />
+              </div>
+              <div class="form-group">
+                <label for="InputCompany">회사명</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="InputCompany"
+                  placeholder="답변을 입력하세요"
+                />
+              </div>
+              <div class="form-group">
+                <label for="InputCategory">업종</label>
+                <select class="form-control" id="InputCategory">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="InputDetail">문의내용</label>
+                <textarea
+                  class="form-control"
+                  id="InputDetail"
+                  rows="3"
+                  placeholder="답변을 입력하세요"
+                ></textarea>
+              </div>
+              <div class="form-group form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="InputCheck"
+                />
+                <label class="form-check-label" for="InputCheck"
+                  >컨설팅을 위한 개인정보 수집 및 이용에 동의합니다.</label
+                >
+              </div>
+              <button type="submit" class="btn btn-secondary">보내기</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
