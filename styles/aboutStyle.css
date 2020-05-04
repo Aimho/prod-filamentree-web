@@ -151,9 +151,6 @@ section {
 
 .location .grid {
   margin-top: 48px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .location .location-item {
@@ -168,16 +165,9 @@ section {
   }
 }
 
-@media screen and (max-width: 960px) {
-  .location .location-item p {
-    font-size: 12px;
-    line-height: 18px;
-  }
-}
-
 .location .location-item + .location-item {
   color: #96a2ad;
   background-color: #f4f4f4;
-  margin-left: 24px;
+  margin-left: 36px;
 }
 /*# sourceMappingURL=aboutStyle.css.map */

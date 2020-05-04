@@ -1,0 +1,46 @@
+@import "./font.scss";
+
+.request {
+  position: relative;
+  padding: 180px 0;
+  min-height: calc(100vh - 226px);
+  .grid {
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  h3.title {
+    font-weight: bold;
+  }
+  .divider-bottom {
+    width: calc(100% - 256px);
+    height: 3px;
+    background-color: #ffef00;
+    margin-bottom: 8px;
+  }
+  ul.grid {
+    margin-top: 48px;
+    padding-left: 0;
+    justify-content: start;
+    li {
+      width: 280px;
+      height: 190px;
+      padding: 50px;
+      color: #fff;
+      background-color: #000;
+      list-style-type: none;
+      hr {
+        width: 42px;
+        height: 6px;
+        background-color: #ffef00;
+        display: inline-block;
+      }
+      h4 {
+        max-width: 180px;
+        line-height: normal;
+      }
+    }
+    li + li {
+      margin-left: 24px;
+    }
+  }
+}

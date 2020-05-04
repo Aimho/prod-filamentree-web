@@ -97,7 +97,6 @@ section {
   }
   .grid {
     margin-top: 48px;
-    justify-content: space-between;
   }
   .location-item {
     width: 480px;
@@ -106,16 +105,10 @@ section {
     @media screen and (max-width: 960px) {
       padding: 80px 28px;
     }
-    p {
-      @media screen and (max-width: 960px) {
-        font-size: 12px;
-        line-height: 18px;
-      }
-    }
   }
   .location-item + .location-item {
     color: #96a2ad;
     background-color: #f4f4f4;
-    margin-left: 24px;
+    margin-left: 36px;
   }
 }
