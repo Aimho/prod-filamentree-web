@@ -1,9 +1,16 @@
 ## prod-filamentree-web
-- Bootstrap을 사용해서 만든 브랜드 페이지 (반응형)
-- using HTML &amp; SCSS &amp; Bootstrap
+
+- 담당: publishing
+- 설명: Bootstrap을 사용해서 만든 브랜드 페이지 (반응형)
+- 사용: Bootstrap, SCSS, AOS(Animate On Scroll Library)
 
 ### Auto Compile (Sass -> CSS)
+
 - Live Sass Compiler
 
-### Pages
-1. index.html: Home
+### 작업 항목
+
+[x] Home
+[x] About
+[ ] Request
+[ ] Work

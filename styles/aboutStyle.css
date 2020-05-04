@@ -1,0 +1,183 @@
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 300;
+  src: url(../assets/fonts/NanumSquareL.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/NanumSquareL.woff) format("woff"), url(../assets/fonts/NanumSquareL.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 400;
+  src: url(../assets/fonts/NanumSquareR.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/NanumSquareR.woff) format("woff"), url(../assets/fonts/NanumSquareR.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 700;
+  src: url(../assets/fonts/NanumSquareB.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/NanumSquareB.woff) format("woff"), url(../assets/fonts/NanumSquareB.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 800;
+  src: url(../assets/fonts/NanumSquareEB.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/NanumSquareEB.woff) format("woff"), url(../assets/fonts/NanumSquareEB.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: LEMONMILK;
+  font-weight: 400;
+  src: url(../assets/fonts/LEMONMILK-Regular.otf) format("otf");
+}
+
+@font-face {
+  font-family: LEMONMILK;
+  font-weight: 700;
+  src: url(../assets/fonts/LEMONMILK-Medium.otf) format("otf");
+}
+
+@font-face {
+  font-family: LEMONMILK;
+  font-weight: 800;
+  src: url(../assets/fonts/LEMONMILK-Bold.otf) format("otf");
+}
+
+section {
+  padding: 80px 0;
+}
+
+.title {
+  font-family: "LEMONMILK", sans-serif;
+  font-weight: bold;
+}
+
+.about {
+  position: relative;
+  padding: 120px 0;
+  padding-top: 237px;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 120px 0;
+  }
+}
+
+.about p {
+  margin-top: 48px;
+}
+
+.concept {
+  padding-top: 0px;
+}
+
+.concept h4.subtitle {
+  margin-bottom: 28px;
+}
+
+.concept .team {
+  color: #fff;
+  padding: 56px 48px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 14px;
+}
+
+.concept .team.agency {
+  background-image: url(../assets/images/about-team-1.png);
+}
+
+.concept .team.production {
+  background-image: url(../assets/images/about-team-1.png);
+}
+
+.concept .team.planning {
+  background-image: url(../assets/images/about-team-1.png);
+}
+
+.concept .team h4 {
+  font-family: "LEMONMILK", sans-serif;
+  font-weight: bold;
+}
+
+.concept .team hr {
+  width: 30px;
+  height: 5px;
+  background-color: #ffef00;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.concept .team p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.concept .team p b {
+  display: block;
+}
+
+.concept .team p + p {
+  margin-top: 12px;
+}
+
+.history {
+  height: 1200px;
+  background: url(../assets/images/history-banner.png) no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.history .title {
+  color: #fff;
+}
+
+.history img {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.partner .title {
+  color: #96a2ad;
+}
+
+.partner img {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.location .title {
+  color: #96a2ad;
+}
+
+.location .grid {
+  margin-top: 48px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.location .location-item {
+  width: 480px;
+  padding: 120px 48px;
+  background-color: #ffef38;
+}
+
+@media screen and (max-width: 960px) {
+  .location .location-item {
+    padding: 80px 28px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .location .location-item p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.location .location-item + .location-item {
+  color: #96a2ad;
+  background-color: #f4f4f4;
+  margin-left: 24px;
+}
+/*# sourceMappingURL=aboutStyle.css.map */

@@ -1,0 +1,121 @@
+@import "./font.scss";
+
+section {
+  padding: 80px 0;
+}
+
+.title {
+  font-family: $fontLemon;
+  font-weight: bold;
+}
+
+.about {
+  position: relative;
+  padding: 120px 0;
+  padding-top: 237px;
+  @media screen and (max-width: 768px) {
+    padding: 120px 0;
+  }
+  p {
+    margin-top: 48px;
+  }
+}
+
+.concept {
+  padding-top: 0px;
+  h4.subtitle {
+    margin-bottom: 28px;
+  }
+
+  .team {
+    color: #fff;
+    padding: 56px 48px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 14px;
+    &.agency {
+      background-image: url(../assets/images/about-team-1.png);
+    }
+    &.production {
+      background-image: url(../assets/images/about-team-1.png);
+    }
+    &.planning {
+      background-image: url(../assets/images/about-team-1.png);
+    }
+    h4 {
+      font-family: $fontLemon;
+      font-weight: bold;
+    }
+    hr {
+      width: 30px;
+      height: 5px;
+      background-color: #ffef00;
+      margin-top: 24px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      b {
+        display: block;
+      }
+      & + p {
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+.history {
+  height: 1200px;
+  background: url(../assets/images/history-banner.png) no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  .title {
+    color: #fff;
+  }
+  img {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+
+.partner {
+  .title {
+    color: #96a2ad;
+  }
+  img {
+    margin-top: 24px;
+    width: 100%;
+  }
+}
+
+.location {
+  .title {
+    color: #96a2ad;
+  }
+  .grid {
+    margin-top: 48px;
+    justify-content: space-between;
+  }
+  .location-item {
+    width: 480px;
+    padding: 120px 48px;
+    background-color: #ffef38;
+    @media screen and (max-width: 960px) {
+      padding: 80px 28px;
+    }
+    p {
+      @media screen and (max-width: 960px) {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+  .location-item + .location-item {
+    color: #96a2ad;
+    background-color: #f4f4f4;
+    margin-left: 24px;
+  }
+}

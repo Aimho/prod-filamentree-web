@@ -1,0 +1,188 @@
+@import "./font.scss";
+
+.main {
+  position: relative;
+  padding: 120px 0;
+  padding-top: 237px;
+  background: url(../assets/images/main-banner.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media screen and (max-width: 768px) {
+    padding: 120px 0;
+  }
+  .container {
+    position: relative;
+    hr {
+      width: 111px;
+      height: 11px;
+      background-color: #ffef00;
+      margin-bottom: 25px;
+      display: inline-block;
+    }
+    h3 {
+      color: #fff;
+      font-weight: normal;
+      @media screen and (max-width: 768px) {
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+    h4 {
+      font-family: $fontLemon;
+      font-weight: normal;
+      margin-top: 24px;
+      color: #fff;
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    h4 b {
+      font-family: $fontLemon;
+    }
+    a.btn {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      white-space: nowrap;
+
+      font-family: $fontLemon;
+      margin-top: 45px;
+      padding: 10px 9px;
+      line-height: normal;
+      font-weight: bolder;
+      img {
+        height: 14px;
+        margin-left: 8px;
+        padding-bottom: 2px;
+      }
+    }
+  }
+}
+
+.desc {
+  position: relative;
+  padding: 125px 0;
+  padding-bottom: 180px;
+  background-color: #ffef00;
+  h1 {
+    padding: 42px 0;
+  }
+  .desc-end {
+    text-align: right;
+    max-width: calc(50% + 120px);
+  }
+
+  .desc-content {
+    margin-top: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .content {
+      width: 30%;
+      border-top: solid 3px;
+      padding-top: 20px;
+      .title {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+        height: 65px;
+        p {
+          line-height: normal;
+          b {
+            font-size: 18px;
+          }
+        }
+      }
+      .num-1 {
+        padding-left: 72px;
+        background-image: url(../assets/images/desc-num-1.png);
+      }
+      .num-2 {
+        padding-left: 92px;
+        background-image: url(../assets/images/desc-num-2.png);
+      }
+      .num-3 {
+        padding-left: 92px;
+        background-image: url(../assets/images/desc-num-3.png);
+      }
+      .detail {
+        padding-top: 30px;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+.portfolio {
+  padding: 120px 0;
+  padding-bottom: 85px;
+
+  .container > h2 {
+    font-family: $fontLemon;
+    color: #96a2ad;
+  }
+
+  .contents {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    a:not(:nth-child(3n)) {
+      margin-right: 4.5%;
+    }
+    a {
+      position: relative;
+      margin-bottom: 18px;
+      width: calc(33.333% - 3%);
+      img {
+        width: 100%;
+      }
+      .info {
+        display: none;
+      }
+      &:hover .info {
+        padding: 20px 24px;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #ffef00, $alpha: 0.8);
+
+        display: flex;
+        flex-direction: column;
+        h2 {
+          z-index: 11;
+          margin-left: auto;
+          color: #fff;
+        }
+        p {
+          z-index: 11;
+          color: #000;
+          margin-top: auto;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  .more-btn {
+    margin-top: 80px;
+    text-align: center;
+    a {
+      display: inline-block;
+      padding: 10px;
+      background-color: #262626;
+      text-decoration: none;
+      h3 {
+        width: 27px;
+        font-weight: normal;
+        line-height: normal;
+      }
+    }
+  }
+}

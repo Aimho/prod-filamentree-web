@@ -1,0 +1,287 @@
+@import "./font.scss";
+
+* {
+  font-family: $fontNanum;
+}
+
+// Set bootstrap
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.btn.dropdown-toggle {
+  background: url("../assets/images/arrow_drop_down-24px.svg") no-repeat 95% 50%;
+  padding: 0 12px;
+  padding-right: 27px;
+}
+.dropdown-menu,
+.dropdown-item {
+  font-size: 12px;
+  padding: 0;
+}
+.dropdown-item {
+  padding: 4px 12px;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  & + label {
+    margin-bottom: 0;
+  }
+}
+input[type="radio"],
+input[type="checkbox"] {
+  &.invisible {
+    display: none;
+  }
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  &::placeholder {
+    color: #d0d3db;
+  }
+}
+
+label.btn,
+button.btn {
+  border: solid 1px #dce0e6;
+}
+button.btn-default {
+  color: #000 !important;
+  background-color: #ffef00;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// custom
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+h4 {
+  font-size: 20px;
+  line-height: 28px;
+}
+h5 {
+  font-size: 16px;
+  line-height: 24px;
+}
+h6 {
+  font-size: 14px;
+  line-height: 20px;
+}
+body {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  position: relative;
+  @media screen and (max-width: 768px) {
+    min-width: auto;
+  }
+}
+
+.visible-web {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.visible-app {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: inline;
+  }
+}
+.container {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    padding: 0 15px;
+  }
+}
+.grid {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  cursor: pointer;
+  color: #fff;
+  &.active,
+  &:hover {
+    color: #ffef00;
+  }
+  &:hover {
+    opacity: 0.8;
+    @media screen and (max-width: 768px) {
+      opacity: 1;
+    }
+  }
+  &.btn {
+    background-color: #ffef00;
+    color: #000;
+    border-radius: 1px;
+    padding: 0px 4px;
+    height: fit-content;
+    font-weight: bold;
+  }
+}
+
+.gnb {
+  top: 0;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 1000;
+  background-color: #000;
+  padding: 6px 20px;
+  color: #fff;
+  @media screen and (max-width: 768px) {
+    padding: 6px 0px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img.logo {
+      height: 30px;
+    }
+
+    .grid {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    a.btn,
+    a.nav-link {
+      font-family: $fontLemon;
+      font-size: 14px;
+      font-weight: bold;
+      color: #96a2ad;
+    }
+    a.btn {
+      color: #000;
+    }
+    a.btn,
+    a.nav-link + a.nav-link {
+      margin-left: 13px;
+    }
+
+    a.toggle {
+      display: none;
+      background-color: transparent;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      border: 0px;
+      width: 35px;
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+      &:active,
+      &:focus {
+        border: 0px;
+        background-color: transparent;
+        box-shadow: none;
+      }
+      span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #ffef00;
+        margin: 0px;
+        & + span {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  .collapse,
+  .collapsing {
+    background-color: #000;
+    padding: 13px 0px;
+  }
+  .collapsing {
+    padding: 10px 0px;
+  }
+}
+
+footer {
+  padding: 40px 0;
+  background-color: #2a2a2a;
+  color: #8a8989;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    padding: 20px 0;
+  }
+  img {
+    height: 20px;
+  }
+  p {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.modal {
+  .modal-header {
+    justify-content: center;
+    border-bottom: 0px;
+    .modal-title {
+      margin: 0 auto;
+      color: #000;
+      font-weight: bold;
+      b {
+        padding: 0 10px;
+        position: relative;
+        font-weight: bolder;
+        background: linear-gradient(
+          to bottom,
+          #fff 0% 40%,
+          #ffef00 40% 60%,
+          #fff 60% 100%
+        );
+      }
+    }
+  }
+  .modal-body {
+    text-align: center;
+    font-size: 14px;
+    .form-group {
+      text-align: left;
+    }
+    .form-check {
+      text-align: center;
+    }
+    .btn-secondary {
+      color: #000;
+      background-color: #bfbfbf;
+      padding: 2px 24px;
+      font-size: 14px;
+    }
+  }
+}

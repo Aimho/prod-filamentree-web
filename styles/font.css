@@ -1,0 +1,42 @@
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 300;
+  src: url(../assets/fonts/NanumSquareL.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/NanumSquareL.woff) format("woff"), url(../assets/fonts/NanumSquareL.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 400;
+  src: url(../assets/fonts/NanumSquareR.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/NanumSquareR.woff) format("woff"), url(../assets/fonts/NanumSquareR.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 700;
+  src: url(../assets/fonts/NanumSquareB.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/NanumSquareB.woff) format("woff"), url(../assets/fonts/NanumSquareB.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 800;
+  src: url(../assets/fonts/NanumSquareEB.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/NanumSquareEB.woff) format("woff"), url(../assets/fonts/NanumSquareEB.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: LEMONMILK;
+  font-weight: 400;
+  src: url(../assets/fonts/LEMONMILK-Regular.otf) format("otf");
+}
+
+@font-face {
+  font-family: LEMONMILK;
+  font-weight: 700;
+  src: url(../assets/fonts/LEMONMILK-Medium.otf) format("otf");
+}
+
+@font-face {
+  font-family: LEMONMILK;
+  font-weight: 800;
+  src: url(../assets/fonts/LEMONMILK-Bold.otf) format("otf");
+}
+/*# sourceMappingURL=font.css.map */
