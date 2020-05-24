@@ -69,55 +69,15 @@ section {
   padding-top: 0px;
 }
 
-.concept h4.subtitle {
+.concept img.title {
   margin-bottom: 28px;
 }
 
-.concept .team {
+.concept img.full {
   color: #fff;
-  padding: 56px 48px;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 14px;
-}
-
-.concept .team.agency {
-  background-image: url(../assets/images/about-team-1.png);
-}
-
-.concept .team.production {
-  background-image: url(../assets/images/about-team-1.png);
-}
-
-.concept .team.planning {
-  background-image: url(../assets/images/about-team-1.png);
-}
-
-.concept .team h4 {
-  font-family: "LEMONMILK", sans-serif;
-  font-weight: bold;
-}
-
-.concept .team hr {
-  width: 30px;
-  height: 5px;
-  background-color: #ffef00;
-  margin-top: 24px;
-  margin-bottom: 20px;
-  display: inline-block;
-}
-
-.concept .team p {
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.concept .team p b {
-  display: block;
-}
-
-.concept .team p + p {
-  margin-top: 12px;
 }
 
 .history {
@@ -131,8 +91,7 @@ section {
   color: #fff;
 }
 
-.history img {
-  width: 100%;
+.history img.full {
   margin-top: 100px;
 }
 
@@ -140,9 +99,8 @@ section {
   color: #96a2ad;
 }
 
-.partner img {
+.partner img.full {
   margin-top: 24px;
-  width: 100%;
 }
 
 .location .title {
@@ -153,21 +111,27 @@ section {
   margin-top: 48px;
 }
 
-.location .location-item {
+.location a.location-item {
   width: 480px;
   padding: 120px 48px;
+  color: #96a2ad;
+  background-color: #f4f4f4;
+}
+
+.location a.location-item:hover {
+  color: #000;
   background-color: #ffef38;
+  text-decoration: none;
+  opacity: 1;
 }
 
 @media screen and (max-width: 960px) {
-  .location .location-item {
+  .location a.location-item {
     padding: 80px 28px;
   }
 }
 
-.location .location-item + .location-item {
-  color: #96a2ad;
-  background-color: #f4f4f4;
+.location a.location-item + a.location-item {
   margin-left: 36px;
 }
 /*# sourceMappingURL=aboutStyle.css.map */

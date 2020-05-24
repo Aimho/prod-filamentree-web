@@ -1,4 +1,4 @@
-@import "./font.scss";
+@import './font.scss';
 
 * {
   font-family: $fontNanum;
@@ -15,7 +15,7 @@ p {
   margin: 0;
 }
 .btn.dropdown-toggle {
-  background: url("../assets/images/arrow_drop_down-24px.svg") no-repeat 95% 50%;
+  background: url('../assets/images/arrow_drop_down-24px.svg') no-repeat 95% 50%;
   padding: 0 12px;
   padding-right: 27px;
 }
@@ -42,21 +42,21 @@ p {
 .dropdown-toggle::after {
   display: none;
 }
-input[type="radio"],
-input[type="checkbox"] {
+input[type='radio'],
+input[type='checkbox'] {
   & + label {
     margin-bottom: 0;
   }
 }
-input[type="radio"],
-input[type="checkbox"] {
+input[type='radio'],
+input[type='checkbox'] {
   &.invisible {
     display: none;
   }
 }
-input[type="text"],
-input[type="email"],
-input[type="password"],
+input[type='text'],
+input[type='email'],
+input[type='password'],
 textarea {
   &::placeholder {
     color: #d0d3db;
@@ -115,6 +115,9 @@ body {
   //   min-width: auto;
   // }
 }
+img {
+  max-width: 100%;
+}
 
 .visible-web {
   @media screen and (max-width: 768px) {
@@ -128,7 +131,7 @@ body {
   }
 }
 .container {
-  max-width: 1280px;
+  max-width: 1440px;
   padding: 0 30px;
   margin: 0 auto;
 }
@@ -297,5 +300,15 @@ footer {
       padding: 2px 24px;
       font-size: 14px;
     }
+  }
+}
+
+img {
+  &.block {
+    display: block;
+  }
+  &.full {
+    width: 100%;
+    height: auto;
   }
 }

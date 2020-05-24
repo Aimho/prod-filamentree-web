@@ -88,40 +88,40 @@ p {
   display: none;
 }
 
-input[type="radio"] + label,
-input[type="checkbox"] + label {
+input[type='radio'] + label,
+input[type='checkbox'] + label {
   margin-bottom: 0;
 }
 
-input[type="radio"].invisible,
-input[type="checkbox"].invisible {
+input[type='radio'].invisible,
+input[type='checkbox'].invisible {
   display: none;
 }
 
-input[type="text"]::-webkit-input-placeholder,
-input[type="email"]::-webkit-input-placeholder,
-input[type="password"]::-webkit-input-placeholder,
+input[type='text']::-webkit-input-placeholder,
+input[type='email']::-webkit-input-placeholder,
+input[type='password']::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #d0d3db;
 }
 
-input[type="text"]:-ms-input-placeholder,
-input[type="email"]:-ms-input-placeholder,
-input[type="password"]:-ms-input-placeholder,
+input[type='text']:-ms-input-placeholder,
+input[type='email']:-ms-input-placeholder,
+input[type='password']:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #d0d3db;
 }
 
-input[type="text"]::-ms-input-placeholder,
-input[type="email"]::-ms-input-placeholder,
-input[type="password"]::-ms-input-placeholder,
+input[type='text']::-ms-input-placeholder,
+input[type='email']::-ms-input-placeholder,
+input[type='password']::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   color: #d0d3db;
 }
 
-input[type="text"]::placeholder,
-input[type="email"]::placeholder,
-input[type="password"]::placeholder,
+input[type='text']::placeholder,
+input[type='email']::placeholder,
+input[type='password']::placeholder,
 textarea::placeholder {
   color: #d0d3db;
 }
@@ -182,6 +182,10 @@ body {
   position: relative;
 }
 
+img {
+  max-width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .visible-web {
     display: none;
@@ -199,7 +203,7 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1440px;
   padding: 0 30px;
   margin: 0 auto;
 }
@@ -411,5 +415,14 @@ footer p {
   background-color: #bfbfbf;
   padding: 2px 24px;
   font-size: 14px;
+}
+
+img.block {
+  display: block;
+}
+
+img.full {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=commonStyle.css.map */

@@ -12,5 +12,5 @@
 
 [x] Home
 [x] About
-[ ] Request
-[ ] Work
+[x] Request
+[x] Work

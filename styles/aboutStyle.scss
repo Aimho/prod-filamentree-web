@@ -1,4 +1,4 @@
-@import "./font.scss";
+@import './font.scss';
 
 section {
   padding: 80px 0;
@@ -23,47 +23,15 @@ section {
 
 .concept {
   padding-top: 0px;
-  h4.subtitle {
+  img.title {
     margin-bottom: 28px;
   }
 
-  .team {
+  img.full {
     color: #fff;
-    padding: 56px 48px;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 14px;
-    &.agency {
-      background-image: url(../assets/images/about-team-1.png);
-    }
-    &.production {
-      background-image: url(../assets/images/about-team-1.png);
-    }
-    &.planning {
-      background-image: url(../assets/images/about-team-1.png);
-    }
-    h4 {
-      font-family: $fontLemon;
-      font-weight: bold;
-    }
-    hr {
-      width: 30px;
-      height: 5px;
-      background-color: #ffef00;
-      margin-top: 24px;
-      margin-bottom: 20px;
-      display: inline-block;
-    }
-    p {
-      font-size: 14px;
-      line-height: 20px;
-      b {
-        display: block;
-      }
-      & + p {
-        margin-top: 12px;
-      }
-    }
   }
 }
 
@@ -75,8 +43,7 @@ section {
   .title {
     color: #fff;
   }
-  img {
-    width: 100%;
+  img.full {
     margin-top: 100px;
   }
 }
@@ -85,9 +52,8 @@ section {
   .title {
     color: #96a2ad;
   }
-  img {
+  img.full {
     margin-top: 24px;
-    width: 100%;
   }
 }
 
@@ -98,17 +64,22 @@ section {
   .grid {
     margin-top: 48px;
   }
-  .location-item {
+  a.location-item {
     width: 480px;
     padding: 120px 48px;
-    background-color: #ffef38;
+    color: #96a2ad;
+    background-color: #f4f4f4;
+    &:hover {
+      color: #000;
+      background-color: #ffef38;
+      text-decoration: none;
+      opacity: 1;
+    }
     @media screen and (max-width: 960px) {
       padding: 80px 28px;
     }
   }
-  .location-item + .location-item {
-    color: #96a2ad;
-    background-color: #f4f4f4;
+  a.location-item + a.location-item {
     margin-left: 36px;
   }
 }

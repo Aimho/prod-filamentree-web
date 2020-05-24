@@ -70,6 +70,14 @@
   background-image: url(../assets/images/icon-logo-active.png);
 }
 
+.film h6 span.logo.marketing {
+  background-image: url(../assets/images/marketingIcon.png);
+}
+
+.film h6 span.logo.influencer {
+  background-image: url(../assets/images/influencerIcon.png);
+}
+
 .film h6 + h6 {
   margin-left: 24px;
 }

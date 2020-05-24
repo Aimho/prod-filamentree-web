@@ -1,61 +1,30 @@
-@import "./font.scss";
+@import './font.scss';
 
+// Todo: 영상 사이즈에 맞게 padding, background-size 수정
 .main {
   position: relative;
   padding: 120px 0;
   padding-top: 237px;
   background: url(../assets/images/main-banner.png) no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-color: #000;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.25;
+  }
   @media screen and (max-width: 768px) {
     padding: 120px 0;
   }
   .container {
     position: relative;
-    hr {
-      width: 111px;
-      height: 11px;
-      background-color: #ffef00;
-      margin-bottom: 25px;
-      display: inline-block;
-    }
-    h3 {
-      color: #fff;
-      font-weight: normal;
-      @media screen and (max-width: 768px) {
-        font-size: 28px;
-        line-height: 34px;
-      }
-    }
-    h4 {
-      font-family: $fontLemon;
-      font-weight: normal;
-      margin-top: 24px;
-      color: #fff;
-      @media screen and (max-width: 768px) {
-        font-size: 14px;
-        line-height: 20px;
-      }
-    }
-    h4 b {
-      font-family: $fontLemon;
-    }
+    z-index: 10;
     a.btn {
-      display: inline-flex;
-      justify-content: space-between;
-      align-items: center;
-      white-space: nowrap;
-
       font-family: $fontLemon;
-      margin-top: 45px;
-      padding: 10px 9px;
-      line-height: normal;
-      font-weight: bolder;
-      img {
-        height: 14px;
-        margin-left: 8px;
-        padding-bottom: 2px;
-      }
+      margin-top: 180px;
     }
   }
 }
@@ -131,7 +100,7 @@
     display: flex;
     flex-wrap: wrap;
     a:not(:nth-child(3n)) {
-      margin-right: 4.5%;
+      margin-right: 21px;
     }
     a {
       position: relative;

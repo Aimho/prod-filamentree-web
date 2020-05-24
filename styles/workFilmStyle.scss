@@ -1,4 +1,4 @@
-@import "./font.scss";
+@import './font.scss';
 
 .film {
   position: relative;
@@ -22,6 +22,12 @@
       &.active {
         background-image: url(../assets/images/icon-logo-active.png);
       }
+    }
+    span.logo.marketing {
+      background-image: url(../assets/images/marketingIcon.png);
+    }
+    span.logo.influencer {
+      background-image: url(../assets/images/influencerIcon.png);
     }
   }
   h6 + h6 {

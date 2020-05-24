@@ -45,8 +45,17 @@
   padding: 120px 0;
   padding-top: 237px;
   background: url(../assets/images/main-banner.png) no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-color: #000;
+}
+
+.main::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.25;
 }
 
 @media screen and (max-width: 768px) {
@@ -57,68 +66,12 @@
 
 .main .container {
   position: relative;
-}
-
-.main .container hr {
-  width: 111px;
-  height: 11px;
-  background-color: #ffef00;
-  margin-bottom: 25px;
-  display: inline-block;
-}
-
-.main .container h3 {
-  color: #fff;
-  font-weight: normal;
-}
-
-@media screen and (max-width: 768px) {
-  .main .container h3 {
-    font-size: 28px;
-    line-height: 34px;
-  }
-}
-
-.main .container h4 {
-  font-family: "LEMONMILK", sans-serif;
-  font-weight: normal;
-  margin-top: 24px;
-  color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  .main .container h4 {
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
-
-.main .container h4 b {
-  font-family: "LEMONMILK", sans-serif;
+  z-index: 10;
 }
 
 .main .container a.btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  white-space: nowrap;
   font-family: "LEMONMILK", sans-serif;
-  margin-top: 45px;
-  padding: 10px 9px;
-  line-height: normal;
-  font-weight: bolder;
-}
-
-.main .container a.btn img {
-  height: 14px;
-  margin-left: 8px;
-  padding-bottom: 2px;
+  margin-top: 180px;
 }
 
 .desc {
@@ -213,7 +166,7 @@
 }
 
 .portfolio .contents a:not(:nth-child(3n)) {
-  margin-right: 4.5%;
+  margin-right: 21px;
 }
 
 .portfolio .contents a {
