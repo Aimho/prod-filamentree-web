@@ -2,6 +2,14 @@
 
 section {
   padding: 80px 0;
+  @media screen and (max-width: 768px) {
+    padding: 32px 0;
+  }
+  img.section-title {
+    @media screen and (max-width: 768px) {
+      height: 18px;
+    }
+  }
 }
 
 .title {
@@ -14,7 +22,7 @@ section {
   padding: 120px 0;
   padding-top: 237px;
   @media screen and (max-width: 768px) {
-    padding: 120px 0;
+    padding: 60px 0;
   }
   p {
     margin-top: 48px;
@@ -36,21 +44,28 @@ section {
 }
 
 .history {
-  height: 1200px;
+  height: 1320px;
   background: url(../assets/images/history-banner.png) no-repeat;
   background-size: cover;
   background-position-y: center;
+  @media screen and (max-width: 768px) {
+    background-image: url(../assets/images/historyBannerApp.png);
+    background-position-y: bottom;
+  }
   .title {
     color: #fff;
   }
   img.full {
     margin-top: 100px;
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+    }
   }
 }
 
 .partner {
-  .title {
-    color: #96a2ad;
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
   }
   img.full {
     margin-top: 24px;
@@ -58,28 +73,47 @@ section {
 }
 
 .location {
-  .title {
-    color: #96a2ad;
-  }
   .grid {
     margin-top: 48px;
+    @media screen and (max-width: 768px) {
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
   }
   a.location-item {
     width: 480px;
     padding: 120px 48px;
     color: #96a2ad;
     background-color: #f4f4f4;
+    @media screen and (max-width: 768px) {
+      padding: 60px 28px;
+      width: 100%;
+    }
     &:hover {
       color: #000;
       background-color: #ffef38;
       text-decoration: none;
       opacity: 1;
     }
-    @media screen and (max-width: 960px) {
-      padding: 80px 28px;
+    h2 {
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 8px;
+      }
+    }
+    p {
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+        line-height: 16px;
+      }
     }
   }
   a.location-item + a.location-item {
     margin-left: 36px;
+    @media screen and (max-width: 768px) {
+      margin-top: 12px;
+      margin-left: 0px;
+    }
   }
 }

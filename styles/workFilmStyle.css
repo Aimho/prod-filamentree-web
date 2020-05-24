@@ -42,7 +42,13 @@
 
 .film {
   position: relative;
-  padding: 120px 0;
+  padding-top: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .film {
+    padding-top: 60px;
+  }
 }
 
 .film h3.title {
@@ -54,8 +60,28 @@
   margin-bottom: 66px;
 }
 
+@media screen and (max-width: 768px) {
+  .film img.section-title {
+    margin-bottom: 24px;
+  }
+}
+
 .film h6 {
+  cursor: pointer;
   font-weight: bold;
+  margin-right: 24px;
+}
+
+.film h6:hover span.logo, .film h6.active span.logo {
+  background-image: url(../assets/images/icon-logo-active.png);
+}
+
+@media screen and (max-width: 768px) {
+  .film h6 {
+    font-size: 11px;
+    line-height: 18px;
+    margin-right: 15px;
+  }
 }
 
 .film h6 span.logo {
@@ -66,8 +92,11 @@
   background-size: contain;
 }
 
-.film h6 span.logo.active {
-  background-image: url(../assets/images/icon-logo-active.png);
+@media screen and (max-width: 768px) {
+  .film h6 span.logo {
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .film h6 span.logo.marketing {
@@ -78,18 +107,156 @@
   background-image: url(../assets/images/influencerIcon.png);
 }
 
-.film h6 + h6 {
+.portfolio {
+  padding: 30px 0;
+  padding-bottom: 80px;
+}
+
+.portfolio .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio .contents a:not(:nth-child(3n)) {
+  margin-right: 21px;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio .contents a:not(:nth-child(3n)) {
+    margin-right: 0px;
+  }
+}
+
+.portfolio .contents a {
+  position: relative;
+  margin-bottom: 18px;
+  width: calc(33.333% - 3%);
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio .contents a {
+    width: 100%;
+  }
+}
+
+.portfolio .contents a img {
+  width: 100%;
+}
+
+.portfolio .contents a .info {
+  display: none;
+}
+
+.portfolio .contents a:hover .info {
+  padding: 20px 24px;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 239, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio .contents a:hover .info h2 {
+  z-index: 11;
+  margin-left: auto;
+  color: #fff;
+}
+
+.portfolio .contents a:hover .info p {
+  z-index: 11;
+  color: #000;
+  margin-top: auto;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.portfolio .more-btn {
+  margin-top: 80px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio .more-btn {
+    margin-top: 40px;
+  }
+}
+
+.portfolio .more-btn a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #262626;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio .more-btn a {
+    padding: 12px 8px;
+    background-color: #ffef00;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio .more-btn a img {
+    width: 150px;
+  }
+}
+
+.film-detail {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.film-detail .container {
+  text-align: left;
+  max-width: 768px;
+}
+
+.film-detail img.full {
+  margin-bottom: 36px;
+}
+
+.film-detail h4 {
+  font-weight: bolder;
+}
+
+.film-detail hr {
+  display: inline-block;
+  width: 20%;
+  height: 5px;
+  background-color: #ffef00;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.film-detail p span {
+  display: inline-block;
+  width: 30%;
+}
+
+.film-detail .btn-group {
+  margin-top: 24px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.film-detail .btn-group img {
+  height: 24px;
+}
+
+.film-detail .btn-group a + a {
   margin-left: 24px;
-}
-
-.film .portfolio.grid {
-  margin-top: 30px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.film .portfolio.grid img {
-  width: 32%;
 }
 /*# sourceMappingURL=workFilmStyle.css.map */

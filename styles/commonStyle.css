@@ -182,23 +182,29 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    min-width: auto;
+  }
+}
+
 img {
   max-width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .visible-web {
-    display: none;
+    display: none !important;
   }
 }
 
 .visible-app {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 768px) {
   .visible-app {
-    display: inline;
+    display: inline !important;
   }
 }
 
@@ -206,6 +212,12 @@ img {
   max-width: 1440px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
 }
 
 .grid {
@@ -266,7 +278,7 @@ a.btn {
 
 @media screen and (max-width: 768px) {
   .gnb {
-    padding: 6px 0px;
+    padding: 0px;
   }
 }
 
@@ -280,6 +292,12 @@ a.btn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .gnb .container {
+    padding: 10px 15px;
+  }
 }
 
 .gnb .container img.logo {
@@ -333,24 +351,38 @@ a.btn {
 
 .gnb .container a.toggle span {
   display: block;
-  height: 2px;
+  height: 4px;
   width: 100%;
-  background-color: #ffef00;
+  background-color: #878787;
   margin: 0px;
 }
 
 .gnb .container a.toggle span + span {
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 .gnb .collapse,
 .gnb .collapsing {
-  background-color: #000;
-  padding: 13px 0px;
+  background-color: #fff;
+  color: #000;
+  padding: 8px 0px;
+}
+
+.gnb .collapse a,
+.gnb .collapsing a {
+  color: inherit;
+  font-weight: bolder;
+  border-bottom: solid 1px #000;
+}
+
+.gnb .collapse a:active, .gnb .collapse a:focus,
+.gnb .collapsing a:active,
+.gnb .collapsing a:focus {
+  background-color: #ffef00;
 }
 
 .gnb .collapsing {
-  padding: 10px 0px;
+  padding: 12px 0px;
 }
 
 footer {
@@ -360,20 +392,27 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  footer {
-    padding: 20px 0;
-  }
-}
-
 footer img {
   height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  footer img {
+    height: 16px;
+  }
 }
 
 footer p {
   margin-top: 12px;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  footer p {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 .modal .modal-header {

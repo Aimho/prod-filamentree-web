@@ -2,7 +2,10 @@
 
 .film {
   position: relative;
-  padding: 120px 0;
+  padding-top: 120px;
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+  }
   h3.title {
     font-weight: bold;
     margin-bottom: 24px;
@@ -10,17 +13,36 @@
   p.detail {
     margin-bottom: 66px;
   }
+  img.section-title {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 24px;
+    }
+  }
 
   h6 {
+    cursor: pointer;
     font-weight: bold;
+    margin-right: 24px;
+    &:hover,
+    &.active {
+      span.logo {
+        background-image: url(../assets/images/icon-logo-active.png);
+      }
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 11px;
+      line-height: 18px;
+      margin-right: 15px;
+    }
     span.logo {
       width: 20px;
       height: 20px;
       margin-right: 4px;
       background: url(../assets/images/icon-logo-inactive.png) no-repeat;
       background-size: contain;
-      &.active {
-        background-image: url(../assets/images/icon-logo-active.png);
+      @media screen and (max-width: 768px) {
+        width: 14px;
+        height: 14px;
       }
     }
     span.logo.marketing {
@@ -30,15 +52,120 @@
       background-image: url(../assets/images/influencerIcon.png);
     }
   }
-  h6 + h6 {
-    margin-left: 24px;
+}
+
+.portfolio {
+  padding: 30px 0;
+  padding-bottom: 80px;
+  .contents {
+    display: flex;
+    flex-wrap: wrap;
+    a:not(:nth-child(3n)) {
+      margin-right: 21px;
+      @media screen and (max-width: 768px) {
+        margin-right: 0px;
+      }
+    }
+    a {
+      position: relative;
+      margin-bottom: 18px;
+      width: calc(33.333% - 3%);
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+      .info {
+        display: none;
+      }
+      &:hover .info {
+        padding: 20px 24px;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #ffef00, $alpha: 0.8);
+
+        display: flex;
+        flex-direction: column;
+        h2 {
+          z-index: 11;
+          margin-left: auto;
+          color: #fff;
+        }
+        p {
+          z-index: 11;
+          color: #000;
+          margin-top: auto;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
   }
 
-  .portfolio.grid {
-    margin-top: 30px;
-    justify-content: space-between;
+  .more-btn {
+    margin-top: 80px;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+    }
+    a {
+      display: inline-block;
+      padding: 10px;
+      background-color: #262626;
+      text-decoration: none;
+      @media screen and (max-width: 768px) {
+        padding: 12px 8px;
+        background-color: #ffef00;
+      }
+      img {
+        @media screen and (max-width: 768px) {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+.film-detail {
+  margin: 80px 0;
+  text-align: center;
+  .container {
+    text-align: left;
+    max-width: 768px;
+  }
+  img.full {
+    margin-bottom: 36px;
+  }
+  h4 {
+    font-weight: bolder;
+  }
+  hr {
+    display: inline-block;
+    width: 20%;
+    height: 5px;
+    background-color: #ffef00;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+  p {
+    span {
+      display: inline-block;
+      width: 30%;
+    }
+  }
+  .btn-group {
+    margin-top: 24px;
+    justify-content: flex-end;
     img {
-      width: 32%;
+      height: 24px;
+    }
+    a + a {
+      margin-left: 24px;
     }
   }
 }

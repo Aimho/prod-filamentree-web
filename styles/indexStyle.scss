@@ -9,6 +9,10 @@
   background-size: contain;
   background-position: center;
   background-color: #000;
+  // Todo: 모바일 영상 사이즈 다른 경우 교체 필요
+  @media screen and (max-width: 768px) {
+    // background-image: url(../assets/images/main-banner.png);
+  }
   &::after {
     content: '';
     position: absolute;
@@ -17,14 +21,20 @@
     opacity: 0.25;
   }
   @media screen and (max-width: 768px) {
-    padding: 120px 0;
+    padding: 60px 0;
   }
   .container {
     position: relative;
     z-index: 10;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
     a.btn {
       font-family: $fontLemon;
       margin-top: 180px;
+      @media screen and (max-width: 768px) {
+        margin-top: 40px;
+      }
     }
   }
 }
@@ -34,78 +44,48 @@
   padding: 125px 0;
   padding-bottom: 180px;
   background-color: #ffef00;
-  h1 {
-    padding: 42px 0;
-  }
-  .desc-end {
-    text-align: right;
-    max-width: calc(50% + 120px);
+  @media screen and (max-width: 768px) {
+    padding: 60px 0;
   }
 
   .desc-content {
     margin-top: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .content {
-      width: 30%;
-      border-top: solid 3px;
-      padding-top: 20px;
-      .title {
-        position: relative;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left;
-        height: 65px;
-        p {
-          line-height: normal;
-          b {
-            font-size: 18px;
-          }
-        }
-      }
-      .num-1 {
-        padding-left: 72px;
-        background-image: url(../assets/images/desc-num-1.png);
-      }
-      .num-2 {
-        padding-left: 92px;
-        background-image: url(../assets/images/desc-num-2.png);
-      }
-      .num-3 {
-        padding-left: 92px;
-        background-image: url(../assets/images/desc-num-3.png);
-      }
-      .detail {
-        font-size: 14px;
-        padding-top: 30px;
-        line-height: normal;
-      }
-    }
   }
 }
 
 .portfolio {
   padding: 120px 0;
   padding-bottom: 85px;
+  @media screen and (max-width: 768px) {
+    padding: 60px 0;
+  }
 
-  .container > h2 {
-    font-family: $fontLemon;
-    color: #96a2ad;
+  .container img.title {
+    @media screen and (max-width: 768px) {
+      max-width: 50%;
+    }
   }
 
   .contents {
     margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      margin-top: 24px;
+    }
     a:not(:nth-child(3n)) {
       margin-right: 21px;
+      @media screen and (max-width: 768px) {
+        margin-right: 0px;
+      }
     }
     a {
       position: relative;
       margin-bottom: 18px;
       width: calc(33.333% - 3%);
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
       img {
         width: 100%;
       }
@@ -143,15 +123,22 @@
   .more-btn {
     margin-top: 80px;
     text-align: center;
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+    }
     a {
       display: inline-block;
       padding: 10px;
       background-color: #262626;
       text-decoration: none;
-      h3 {
-        width: 27px;
-        font-weight: normal;
-        line-height: normal;
+      @media screen and (max-width: 768px) {
+        padding: 12px 8px;
+        background-color: #ffef00;
+      }
+      img {
+        @media screen and (max-width: 768px) {
+          width: 150px;
+        }
       }
     }
   }

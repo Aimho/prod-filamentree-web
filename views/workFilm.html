@@ -76,44 +76,72 @@
       </div>
       <!-- mobile menu -->
       <div class="collapse" id="mobileMenu">
-        <a class="nav-link" href="#partner-case">ABOUT</a>
-        <a class="nav-link" href="#solution">WORK</a>
+        <a class="nav-link" href="./about.html">ABOUT</a>
+        <a class="nav-link" href="./workFilm.html">WORK</a>
         <a class="nav-link" href="#influencer">NEWS</a>
-        <a class="nav-link" href="#influencer">CONTACT US</a>
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#contact"
+          >CONTACT US</a
+        >
+        <a class="nav-link" href="./request.html">REQUEST</a>
       </div>
     </nav>
 
     <section class="film">
       <div class="container">
-        <h3 class="title">
+        <h3 class="title visible-web">
           필라멘트리만의 <br />
           콘텐츠 스타일을 확인해보세요.
         </h3>
-        <p class="detail">
+        <p class="detail visible-web">
           FILAMENTREE의 모든 것을 살펴보세요. <br />
           그동안 필라멘트리가 인정받은 결과물을 한 곳에 모았습니다. <br />
           여러분들의 원하는 스타일의 콘텐츠를 각 분야별로 찾아보세요.
         </p>
 
+        <img
+          src="../assets/images/workTitleApp.png"
+          alt=""
+          class="section-title full visible-app"
+        />
+
+        <h6 class="grid inline active"><span class="logo"></span> ALL</h6>
         <h6 class="grid inline">
-          <span class="logo active"></span> 기업홍보영상
+          <span class="logo"></span> 기업홍보/광고영상
         </h6>
-        <h6 class="grid inline"><span class="logo"></span> 광고영상</h6>
-        <h6 class="grid inline">
-          <span class="logo"></span> 브랜드 제품홍보영상
-        </h6>
-        <h6 class="grid inline"><span class="logo"></span> 공공기관 영상</h6>
-        <h6 class="grid inline"><span class="logo"></span> 모션위주 영상</h6>
+        <h6 class="grid inline"><span class="logo"></span> 브랜드/제품</h6>
+        <h6 class="grid inline"><span class="logo"></span> 공공기관</h6>
         <h6 class="grid inline"><span class="logo marketing"></span> 마케팅</h6>
         <h6 class="grid inline">
           <span class="logo influencer"></span> 인플로언서
         </h6>
+      </div>
+    </section>
 
-        <div class="grid portfolio">
-          <img src="../assets/images/portfolio-4.png" alt="" />
-          <img src="../assets/images/portfolio-5.png" alt="" />
-          <img src="../assets/images/portfolio-6.png" alt="" />
+    <section class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <!-- Todo: portfolio contents 링크, 정보 추가해야함 -->
+        <div class="contents">
+          <a href="./workFilmDetail.html">
+            <img src="../assets/images/portfolio-1.png" alt="" />
+            <!-- content 정보 입력 예시 -->
+            <div class="info">
+              <h2>2018</h2>
+              <p>
+                <b>Work / Video</b> <br />
+                [DAIICHI] 베이비카시트 원픽스360_제품영상
+              </p>
+            </div>
+          </a>
+          <a href="#"><img src="../assets/images/portfolio-2.png" alt="" /></a>
+          <a href="#"><img src="../assets/images/portfolio-3.png" alt="" /></a>
         </div>
+      </div>
+
+      <!-- Todo: portfolio 링크 -->
+      <div class="more-btn">
+        <a href="#" class="btn visible-app">
+          <img class="full" src="../assets/images/viewMoreBtn.png" alt="" />
+        </a>
       </div>
     </section>
 

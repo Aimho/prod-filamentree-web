@@ -111,9 +111,9 @@ body {
   min-width: 1140px;
   position: relative;
   // Todo: mobile 작업 시 아래 주석 제거
-  // @media screen and (max-width: 768px) {
-  //   min-width: auto;
-  // }
+  @media screen and (max-width: 768px) {
+    min-width: auto;
+  }
 }
 img {
   max-width: 100%;
@@ -121,19 +121,22 @@ img {
 
 .visible-web {
   @media screen and (max-width: 768px) {
-    display: none;
+    display: none !important;
   }
 }
 .visible-app {
-  display: none;
+  display: none !important;
   @media screen and (max-width: 768px) {
-    display: inline;
+    display: inline !important;
   }
 }
 .container {
   max-width: 1440px;
   padding: 0 30px;
   margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    padding: 0 15px;
+  }
 }
 .grid {
   display: flex;
@@ -176,12 +179,16 @@ a {
   padding: 6px 20px;
   color: #fff;
   @media screen and (max-width: 768px) {
-    padding: 6px 0px;
+    padding: 0px;
   }
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      padding: 10px 15px;
+    }
+
     img.logo {
       height: 30px;
     }
@@ -225,12 +232,12 @@ a {
       }
       span {
         display: block;
-        height: 2px;
+        height: 4px;
         width: 100%;
-        background-color: #ffef00;
+        background-color: #878787;
         margin: 0px;
         & + span {
-          margin-top: 8px;
+          margin-top: 5px;
         }
       }
     }
@@ -238,11 +245,21 @@ a {
 
   .collapse,
   .collapsing {
-    background-color: #000;
-    padding: 13px 0px;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 0px;
+    a {
+      color: inherit;
+      font-weight: bolder;
+      border-bottom: solid 1px #000;
+      &:active,
+      &:focus {
+        background-color: #ffef00;
+      }
+    }
   }
   .collapsing {
-    padding: 10px 0px;
+    padding: 12px 0px;
   }
 }
 
@@ -251,16 +268,20 @@ footer {
   background-color: #2a2a2a;
   color: #8a8989;
   text-align: center;
-  @media screen and (max-width: 768px) {
-    padding: 20px 0;
-  }
   img {
     height: 20px;
+    @media screen and (max-width: 768px) {
+      height: 16px;
+    }
   }
   p {
     margin-top: 12px;
     font-size: 14px;
     line-height: 20px;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
 }
 

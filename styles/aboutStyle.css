@@ -44,6 +44,18 @@ section {
   padding: 80px 0;
 }
 
+@media screen and (max-width: 768px) {
+  section {
+    padding: 32px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section img.section-title {
+    height: 18px;
+  }
+}
+
 .title {
   font-family: "LEMONMILK", sans-serif;
   font-weight: bold;
@@ -57,7 +69,7 @@ section {
 
 @media screen and (max-width: 768px) {
   .about {
-    padding: 120px 0;
+    padding: 60px 0;
   }
 }
 
@@ -81,10 +93,17 @@ section {
 }
 
 .history {
-  height: 1200px;
+  height: 1320px;
   background: url(../assets/images/history-banner.png) no-repeat;
   background-size: cover;
   background-position-y: center;
+}
+
+@media screen and (max-width: 768px) {
+  .history {
+    background-image: url(../assets/images/historyBannerApp.png);
+    background-position-y: bottom;
+  }
 }
 
 .history .title {
@@ -95,20 +114,32 @@ section {
   margin-top: 100px;
 }
 
-.partner .title {
-  color: #96a2ad;
+@media screen and (max-width: 768px) {
+  .history img.full {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partner {
+    margin-top: 20px;
+  }
 }
 
 .partner img.full {
   margin-top: 24px;
 }
 
-.location .title {
-  color: #96a2ad;
-}
-
 .location .grid {
   margin-top: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .location .grid {
+    margin-top: 16px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .location a.location-item {
@@ -118,6 +149,13 @@ section {
   background-color: #f4f4f4;
 }
 
+@media screen and (max-width: 768px) {
+  .location a.location-item {
+    padding: 60px 28px;
+    width: 100%;
+  }
+}
+
 .location a.location-item:hover {
   color: #000;
   background-color: #ffef38;
@@ -125,13 +163,29 @@ section {
   opacity: 1;
 }
 
-@media screen and (max-width: 960px) {
-  .location a.location-item {
-    padding: 80px 28px;
+@media screen and (max-width: 768px) {
+  .location a.location-item h2 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .location a.location-item p {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
 .location a.location-item + a.location-item {
   margin-left: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  .location a.location-item + a.location-item {
+    margin-top: 12px;
+    margin-left: 0px;
+  }
 }
 /*# sourceMappingURL=aboutStyle.css.map */
